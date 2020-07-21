@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [GO Rest Test Suite]" parallel="tests">
+  <test thread-count="3" verbose="0" name="Go Rest Regression Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.gorest.tests.CreateUserAPITest">
+        <methods>
+          <include name="createUserHardCodedAPITest"/>
+        </methods>
+      </class> <!-- com.qa.gorest.tests.CreateUserAPITest -->
+      <class name="com.qa.gorest.tests.UpdateUserAPITest">
+        <methods>
+          <include name="createUserAPI"/>
+          <include name="createUserAPIPUTTest_withSetter"/>
+        </methods>
+      </class> <!-- com.qa.gorest.tests.UpdateUserAPITest -->
+    </classes>
+  </test> <!-- Go Rest Regression Test(failed) -->
+</suite> <!-- Failed suite [GO Rest Test Suite] -->

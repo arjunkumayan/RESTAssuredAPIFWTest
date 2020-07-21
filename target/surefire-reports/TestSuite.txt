@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 7.793 s <<< FAILURE! - in TestSuite
+createUserAPI(com.qa.gorest.tests.UpdateUserAPITest)  Time elapsed: 0.966 s  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.qa.gorest.tests.UpdateUserAPITest.createUserAPI(UpdateUserAPITest.java:43)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+	at com.qa.gorest.tests.UpdateUserAPITest.createUserAPI(UpdateUserAPITest.java:43)
+
+createUserHardCodedAPITest(com.qa.gorest.tests.CreateUserAPITest)  Time elapsed: 0.12 s  <<< FAILURE!
+java.lang.AssertionError: expected [Pratik1] but found [[null]]
+	at com.qa.gorest.tests.CreateUserAPITest.createUserHardCodedAPITest(CreateUserAPITest.java:55)
+
+createUserAPIPUTTest_withSetter(com.qa.gorest.tests.UpdateUserAPITest)  Time elapsed: 1.102 s  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at com.qa.gorest.tests.UpdateUserAPITest.createUserAPIPUTTest_withSetter(UpdateUserAPITest.java:88)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
+	at com.qa.gorest.tests.UpdateUserAPITest.createUserAPIPUTTest_withSetter(UpdateUserAPITest.java:88)
+

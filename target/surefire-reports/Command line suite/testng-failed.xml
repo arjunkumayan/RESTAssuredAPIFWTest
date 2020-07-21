@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.qa.gorest.tests.UpdateUserAPITest">
+        <methods>
+          <include name="createUserAPI"/>
+          <include name="createUserAPIPUTTest_withSetter"/>
+        </methods>
+      </class> <!-- com.qa.gorest.tests.UpdateUserAPITest -->
+      <class name="com.qa.gorest.tests.CreateUserAPITest">
+        <methods>
+          <include name="createUserHardCodedAPITest"/>
+        </methods>
+      </class> <!-- com.qa.gorest.tests.CreateUserAPITest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
